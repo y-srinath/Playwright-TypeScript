@@ -9,7 +9,7 @@ test.describe("Login Tests", () => {
     // if (data.run !== 'yes') continue;
 
     test(`Login test for - ${data.username}`, async ({ page }) => {
-      test.skip(data.run !== "yes", "Run Flag=NO");
+      test.skip(data.run !== "yes", 'Run Flag is set to "No"');
 
       const loginPage = new LoginPage(page);
 
